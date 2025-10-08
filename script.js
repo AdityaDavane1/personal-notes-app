@@ -4,7 +4,7 @@ const notesContainer = document.getElementById("notesContainer");
 
 addNoteBtn.addEventListener("click", () => {
   const text = noteInput.value.trim();
-  if (!text) return alert("Please enter a note before adding!");
+  if (!text) return alert("You cannot add an empty note!");
 
   const note = document.createElement("div");
   note.classList.add("note");
